@@ -21,11 +21,11 @@ process.stdin.on('readable', function() {
                 process.stdout.write("User's system language: " + process.env.LANG + '\n');
                 break;
             case '/sayhello':
-			    process.stdout.write('hello!\n');
-			    break;
-			case '/getOSinfo':
-			    OSinfo.print();
-				break;
+		process.stdout.write('hello!\n');
+		break;
+	    case '/getOSinfo':
+		OSinfo.print();
+		break;
             default:
                 process.stderr.write('Wrong instruction!\n');
         }
